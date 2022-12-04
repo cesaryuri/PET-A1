@@ -1,2 +1,2 @@
 print(" Unlike Pyton ")
-varrr = 1
+varrr = 2
