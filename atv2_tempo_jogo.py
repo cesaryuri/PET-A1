@@ -9,7 +9,7 @@ while (True):
         horat = ((24 - horai) + horaf)
 
   
-    if( (((horai >= 0) and (horai <= 24)) and ((horaf >= 0) and (horaf <= 24))) and (((minutoi >= 0) and (minutoi < 60)) and ((minutof >= 0) and (minutof < 60))) and (horat <= 24)) :
+    if( (((horai >= 0) and (horai <= 24)) and ((horaf >= 0) and (horaf <= 24))) and (((minutoi >= 0) and (minutoi < 60)) and ((minutof >= 0) and (minutof < 60))) and (horat <= 24) ):
 
         if (horaf < horai):
             horat
