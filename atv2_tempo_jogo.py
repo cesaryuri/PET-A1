@@ -1,8 +1,8 @@
 while (True):
-    horai = int(input("Digite a hora de início do jogo:"))
-    minutoi = int(input("Digite o minuto de início do jogo:"))
-    horaf = int(input("Digite a hora de encerramento do jogo"))
-    minutof = int (input("Digite o minuto de encerramento do jogo"))
+    horai = int(input("Digite a hora de início do jogo: "))
+    minutoi = int(input("Digite o minuto de início do jogo: "))
+    horaf = int(input("Digite a hora de encerramento do jogo: "))
+    minutof = int (input("Digite o minuto de encerramento do jogo: "))
     horat = 0
     
     if (horaf < horai):
@@ -13,7 +13,6 @@ while (True):
 
         if (horaf < horai):
             horat
-            minutot = (minutof - minutoi)
             break
         elif ((horaf == horai) and (minutof == minutoi)):
             horat = horai
@@ -21,12 +20,14 @@ while (True):
             break
         elif(horai < horaf):
             horat = (horaf - horai)
-            minutot = (minutof - minutoi)
             break
         
     
     print("Horário inválido")
 
-
+if(minutoi > minutof):
+    minutot = abs(minutof - minutoi)
+    horat -= 1
+else:
+    minutot = minutof - minutoi
 print(f"O jogo durou {horat} hora(s) e {abs(minutot)} minuto(s)")
-    
