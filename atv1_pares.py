@@ -5,5 +5,3 @@ for i in range (1,6):
         contador += 1
 
 print(f"O número de valores pares é: {contador}")
-
-
