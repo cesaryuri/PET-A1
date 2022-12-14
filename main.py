@@ -9,6 +9,7 @@ print("2 - Consultar Saldo Conta")
 print("3 - Depositar na Conta")
 print("4 - Sacar na Conta")
 print("5 - Render Poupanca")
+print("6 - Acumular Poupanca")
 escolha = int(input("digite a opção desejada:"))
 while escolha > 0:
     if escolha == 1:
@@ -55,9 +56,9 @@ while escolha > 0:
         else:
             print("A conta não é poupanca ou não existe")
     elif escolha == 6:
-        print("Acumular Poupanca...")
+        print("Acumular Poupanca")
         numConta = int(input("digite o numero da conta poupanca:"))
-        resp = bancoUfrpe.renderPoupanca(numConta)
+        resp = bancoUfrpe.acumularContaBonificad(numConta)
         if resp:
             print("Poupanca com novo saldo")
         else:
